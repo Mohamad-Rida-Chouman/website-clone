@@ -134,7 +134,7 @@ body{
   .header-left-button{
     font-size: 16px;
     font-family:  Noto Sans Mono, sans-serif;
-      font-weight: bolder;
+    font-weight: bolder;
     background-color: #282828;
     color: white;
     padding: 15px 20px;
@@ -252,6 +252,7 @@ body{
 
 .no-style-link{
   text-decoration: none;
+  color: white;
 }
 
 /* Styling hello world section */
@@ -666,6 +667,7 @@ body{
   background-color: #fff;
   opacity: 0.75;
   transition: opacity ease 250ms;
+  margin-top: 10px;
 }
 
 .slider-nav a:active, a:hover{
@@ -676,7 +678,7 @@ body{
 
 .testimonial-slide{
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex: 0 0 100%;
   flex-direction: row;
   background-color: #282828;
@@ -688,9 +690,7 @@ body{
 
 .testimonial-subject{
   display: flex;
-  flex: 0 0 100%;
   flex-direction: row;
-  width: 100%;
 }
 
 .testimonial-left{
@@ -739,9 +739,18 @@ body{
   width: 400px;
   align-self: center;
 }
+ /* Styling FAQs */
 
+ .FAQs{
+  background-color: #363738;
+  color: white;
+ }
 
-
+.section-FAQs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 
 
@@ -781,8 +790,10 @@ body{
   .hire-talent-more{
     flex-direction: column;
   }
-  .testimonial-slide{
+  .testimonial-subject{
     flex-direction: column;
   }
-
+  /* .testimonial-slide{
+    flex: 1;
+  } */
 }
