@@ -250,7 +250,7 @@ body{
   margin-bottom: 20px;
   }
 
-.dot-black, .dot-grey, .dot-aqua {
+.dot-black, .dot-grey-l, .dot-grey-d, .dot-aqua, .dot-white {
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -260,8 +260,11 @@ body{
 .dot-black{
   background-color: black;
 }
-.dot-grey{
+.dot-grey-l{
   background-color: #dcdee1;
+}
+.dot-grey-d{
+  background-color: #a5a6a9;
 }
 .dot-aqua{
   background-color: #28eea7;
@@ -383,4 +386,14 @@ body{
 
 .stat-bold{
   font-weight: bold;
+}
+
+.programs{
+  background-color: #9864da;
+}
+
+.section-title-programs{
+  background-color: #282828;
+  color: white;
+  padding: 10px;
 }
