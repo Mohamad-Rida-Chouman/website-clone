@@ -202,3 +202,70 @@ body{
       padding: 15px 20px;
       text-decoration: none;
     }
+
+/* Styling hello world section */
+
+.hello-world-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #f1f2f3;
+}
+
+.hello-world-title-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: fit-content;
+  padding-top: 10vh;
+}
+
+.hello-world-title{
+  font-family: Noto Sans Mono, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dot-black, .dot-grey, .dot-aqua {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-black{
+  background-color: black;
+}
+.dot-grey{
+  background-color: grey;
+}
+.dot-aqua{
+  background-color: #28eea7;
+}
+
+.youtube-video-container{
+position: relative;
+width: 100%;
+overflow: hidden;
+padding-top: 56.25%;
+margin-bottom: 20px;
+}
+
+.youtube-video{
+  border-width: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #28eea7;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  bottom: 8%;
+  right: 0;
+  width: 90%;
+  height: 84%;
+}
+
+
