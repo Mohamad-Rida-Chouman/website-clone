@@ -7,16 +7,26 @@ body{
     position: absolute;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 91%;
+    width: 87%;
+    height: 45px;
     top: 10%;
     bottom: 10%;
 }
 
 .header-navbar-logo{
     display: flex;
-    margin-left: 15px;
 }
 
+.link-to-sef , .link-to-menu{
+  z-index: 2;
+}
+
+.link-to-menu{
+  display: flex;
+  background-color: #282828;
+  border-radius: 8px;
+  justify-self: center;
+}
 
 .header-container{
     display: flex;
@@ -55,7 +65,7 @@ body{
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
-    background: #363738;
+    background: #282828;
     flex: 1 0 0;
     align-self: stretch;
 }
@@ -76,7 +86,7 @@ body{
         flex-direction:column;
         height: 176vh;
     }
-  .header-left{
+    .header-left{
         width:100%;
         height:88vh;
     }
@@ -84,6 +94,10 @@ body{
         width:100%;
         height:88vh;
     }
+    .header-navbar{
+        top: 5%;
+        left: 5%;
+    }
+
   
   }
-
