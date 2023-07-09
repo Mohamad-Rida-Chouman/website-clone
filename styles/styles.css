@@ -107,6 +107,10 @@ body{
 
 /* Styling left header section */
 
+.arrow-sign{
+  color:#28eea7;
+}
+
 .header-left-title{
   margin: 0;
   text-align: right;
@@ -123,12 +127,12 @@ body{
     padding: 50px;
     color: white;
     font: 16px;
-    font-family: sans-serif;
+    font-family: Noto Sans Mono, sans-serif;
   }
 
   .header-left-description{
     text-align: right;
-    font-family: sans-serif;
+    font-family: Noto Sans Mono, sans-serif;
     color: white;
   }
 
@@ -136,7 +140,7 @@ body{
     width: fit-content;
     margin-bottom: 5px;
     font-size: 24px;
-    font-family: sans-serif;
+    font-family:  Noto Sans Mono, sans-serif;
     background-color: #282828;
     color: white;
     padding: 1px 5px;
@@ -148,7 +152,8 @@ body{
 
   .header-left-button{
     font-size: 16px;
-    font-family: sans-serif;
+    font-family:  Noto Sans Mono, sans-serif;
+      font-weight: bolder;
     background-color: #282828;
     color: white;
     padding: 15px 20px;
@@ -175,7 +180,7 @@ body{
   
     .header-right-description{
       text-align: left;
-      font-family: sans-serif;
+      font-family: Noto Sans Mono, sans-serif;
       color: white;
     }
   
@@ -183,7 +188,7 @@ body{
       width: fit-content;
       margin-bottom: 5px;
       font-size: 24px;
-      font-family: sans-serif;
+      font-family:  Noto Sans Mono, sans-serif;
       background-color: white;
       color:#282828;
       padding: 1px 5px;
@@ -191,30 +196,31 @@ body{
   
     .header-right-title-detail{
       margin-top: 0;
+      font-family:  Noto Sans Mono, sans-serif;
       color: white;
     }
   
     .header-right-button{
       font-size: 16px;
-      font-family: sans-serif;
+      font-family:  Noto Sans Mono, sans-serif;
+      font-weight: bolder;
       background-color: white;
       color:#282828;
       padding: 15px 20px;
       text-decoration: none;
     }
 
-/* Styling hello world section */
+/* Styling sections */
 
-.hello-world-container{
+.section-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: fit-content;
-  background-color: #f1f2f3;
 }
 
-.hello-world-title-container{
+.section-title-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -223,10 +229,10 @@ body{
   padding-top: 10vh;
 }
 
-.hello-world-title{
+.section-title{
   font-family: Noto Sans Mono, sans-serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .dot-black, .dot-grey, .dot-aqua {
@@ -240,10 +246,19 @@ body{
   background-color: black;
 }
 .dot-grey{
-  background-color: grey;
+  background-color: #dcdee1;
 }
 .dot-aqua{
   background-color: #28eea7;
+}
+.dot-white{
+  background-color: white;
+}
+
+
+/* Styling hello world section */
+.hello-world{
+  background-color: #f1f2f3;
 }
 
 .youtube-video-container{
@@ -268,4 +283,7 @@ margin-bottom: 20px;
   height: 84%;
 }
 
-
+/* Styling milestones section */
+.milestones{
+  background-color: white;
+}
