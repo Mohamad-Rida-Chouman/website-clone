@@ -84,6 +84,8 @@ body{
     object-fit: fill;
 }
 
+/* Responsiveness */
+
 @media screen and (max-width: 990px) {
     .header-container{
         flex-direction:column;
@@ -216,17 +218,19 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   height: fit-content;
+  padding: 45px;
+  padding-left: 55px;
+  padding-right: 55px;
+  justify-content: space-between;
+  
 }
 
 .section-title-container{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   height: fit-content;
-  padding-top: 10vh;
 }
 
 .section-title{
@@ -234,6 +238,15 @@ body{
   font-size: 24px;
   font-weight: bolder;
 }
+
+.section-contents{
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
 
 .dot-black, .dot-grey, .dot-aqua {
   height: 25px;
@@ -261,12 +274,11 @@ body{
   background-color: #f1f2f3;
 }
 
-.youtube-video-container{
-position: relative;
-width: 100%;
-overflow: hidden;
-padding-top: 56.25%;
-margin-bottom: 20px;
+.video-content{
+  padding-top: 56.25%;
+  width: 100%;
+  display: flex;
+  position: relative;
 }
 
 .youtube-video{
@@ -275,11 +287,9 @@ margin-bottom: 20px;
   border-style: solid;
   border-color: #28eea7;
   position: absolute;
-  top: 8%;
-  left: 5%;
-  bottom: 8%;
-  right: 0;
-  width: 90%;
+  top: 0;
+  bottom: 0;
+  width: 96%;
   height: 84%;
 }
 
@@ -287,3 +297,4 @@ margin-bottom: 20px;
 .milestones{
   background-color: white;
 }
+
