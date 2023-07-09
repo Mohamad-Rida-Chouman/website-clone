@@ -250,6 +250,9 @@ body{
   background-color: white;
 }
 
+.no-style-link{
+  text-decoration: none;
+}
 
 /* Styling hello world section */
 .hello-world{
@@ -367,10 +370,21 @@ body{
 
 /* Styling programs section */
 
+.programs{
+  background-color:#ffc635;
+  height: 110vh;
+  justify-content: flex-start;
+}
+
 .section-title-programs{
   background-color: #282828;
   color: white;
   padding: 10px;
+}
+
+.section-programs{
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -422,21 +436,22 @@ body{
 .tab-content {
   display: flex;
   flex-direction: row;
-  /* position: absolute; */
+  position: absolute;
   top: 2.75em;
   left: 0;
   padding: 1.618rem;
-  background: #282828;
+  background: #363738;
   border-radius: 15px;
   color:white;
   font-family: Noto Sans Mono, sans-serif;
   opacity: 0;
   transition: all 0.35s;
   width: 100%;
+  gap: 20px;
 }
 
 .tab-switch:checked + .tab-label {
-  background: #282828;
+  background: #363738;
   color: white;
   border-radius: 15px 15px 0px 0px;
   border-bottom: 0;
@@ -449,10 +464,6 @@ body{
   opacity: 1;
   transition: all 0.35s;
   /* border-radius: 0px 15px 15px 15px; */
-}
-
-.programs{
-  background-color:#ffc635;
 }
 
 /* .programs{
@@ -484,6 +495,16 @@ body{
   background-color: #ffc635;
 }
 
+.aqua-text{
+  color: #28eea7;
+}
+.purple-text{
+  color: #9864da;
+}
+.pink-text{
+  color: #fb508e;
+}
+
 .program-description{
   display: flex;
   flex-direction: column;
@@ -493,9 +514,11 @@ body{
 
 .program-more{
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: auto;
+  gap: 20px;
 }
 
 .orange-text{
@@ -518,6 +541,21 @@ body{
 
 .program-details{
   font-size: 14px;
+}
+
+.program-date{
+  background-color: #232323;
+  padding: 15px;
+  flex: 1;
+}
+.program-learnmore{
+  background-color: #232323;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  text-align: right;
+  flex: 1;
+  font-weight: bolder;
 }
 
 /* Styling hire talent */
@@ -565,6 +603,8 @@ body{
 }
 
 .hire-talent-contact-us{
+  text-decoration: none;
+  color: white;
   padding: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -590,9 +630,116 @@ body{
 
 /* styling testimonial sections */
 
-.testimonial-slide{
-
+.section-testimonials{
+  padding: 2rem;
 }
+
+.slider-wrapper{
+  position: relative;
+  margin: 0 auto;
+}
+
+.slider{
+  display: flex;
+  aspect-ratio: 16/6;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 15px;
+}
+
+.slider-nav{
+  display:flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:active, a:hover{
+  opacity: 1;
+}
+
+/* .slider testimonial-slide */
+
+.testimonial-slide{
+  display: flex;
+  width: 100%;
+  flex: 0 0 100%;
+  flex-direction: row;
+  background-color: #282828;
+  border-radius: 15px;
+  padding: 30px;
+  scroll-snap-align: start;
+  /* object-fit: cover; */
+}
+
+.testimonial-subject{
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: row;
+  width: 100%;
+}
+
+.testimonial-left{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: Noto Sans Mono, sans-serif;
+  gap: 20px;
+}
+
+.quotation{
+  height: 2em;
+  width: 2em;
+}
+
+.testimonial-text{
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #dcdee1;
+}
+
+.testimonial-contact{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #dcdee1;
+}
+
+.testimonial-name{
+  font-size: 18px;
+  font-weight: bolder;
+}
+.testimonial-position{
+  font-size: 14px;
+}
+
+.contact-icon{
+  width: 4em;
+  border-radius: 50%;
+}
+
+.testimonial-right{
+  height: 400px;
+  width: 400px;
+  align-self: center;
+}
+
 
 
 
@@ -625,10 +772,16 @@ body{
   .tab-content{
     flex-direction: column;
   }
+  .programs{
+    height: 165vh;
+  }
   .program-more{
     flex-direction: column;
   }
   .hire-talent-more{
+    flex-direction: column;
+  }
+  .testimonial-slide{
     flex-direction: column;
   }
 
