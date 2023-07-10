@@ -752,7 +752,76 @@ body{
   gap: 20px;
 }
 
+.dropdown{
+  position: relative;
+  background-color: #232323;
+  padding: 25px;
+  width: 100%;
+  font-family: Noto Sans Mono, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+}
 
+
+
+.dropdown-question{
+  width: 100%;
+  margin: 0;
+  border: none;
+  text-align: left;
+  background-color: #232323;
+  font-family: Noto Sans Mono, sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #fff;
+}
+.faqs-link{
+  background-color: #232323;
+  padding: 25px;
+  font-family: Noto Sans Mono, sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  border-radius: 15px;
+  text-align: right;
+}
+.dropdown-item {
+  display: none;
+  background-color: #232323;
+  min-width: 160px;
+  padding: 12px 16px;
+}
+
+/* .dropdown-question:focus + .dropdown-item {
+  display: block;
+}
+.dropdown-question + .dropdown-item {
+  display: block;
+  
+} */
+.dropdown-toggle-checkbox{
+  display: none;
+  background-color: #232323;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown-toggle-checkbox:checked ~ .dropdown-item {
+  display: block;
+}
+
+.dropdown-label {
+  display: block;
+  cursor: pointer;
+}
+.dropdown-label:hover{
+  cursor: pointer;
+}
+
+/* .dropdown:focus + .submenu,
+.submenu:hover {
+    display: block;
+} */
 
 
 
