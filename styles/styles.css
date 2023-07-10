@@ -840,7 +840,6 @@ body{
   color: #a5a6a9;
   border-radius: 15px;
   padding: 20px;
-  /* flex: 1; */
   width: fit-content;
 }
 
@@ -941,9 +940,21 @@ body{
   padding-bottom: 20px;
 }
 
+/* Styling partners section */
 
+.section-partners{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 35px;;
+  width: 100%;
+  padding-top: 20px;
+}
 
-
+.partners-logo{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 
 
@@ -997,5 +1008,8 @@ body{
   }
   .location{
     width: 100%;
+  }
+  .section-partners{
+    grid-template-columns: auto auto auto;
   }
 }
