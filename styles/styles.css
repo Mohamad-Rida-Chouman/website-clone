@@ -666,7 +666,7 @@ body{
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #a5a6a9;
   opacity: 0.75;
   transition: opacity ease 250ms;
   margin-top: 10px;
@@ -674,6 +674,7 @@ body{
 
 .slider-nav a:active, a:hover{
   opacity: 1;
+  background-color: #232323;
 }
 
 /* .slider testimonial-slide */
@@ -1131,6 +1132,15 @@ body{
   .testimonial-subject{
     flex-direction: column;
   }
+  .slider{
+    width: 500px;
+    height: 800px;
+  }
+  .testimonial-left{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   .fullname{
     flex-direction: column;
   }
