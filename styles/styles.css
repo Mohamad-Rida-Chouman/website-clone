@@ -525,7 +525,9 @@ body{
 .orange-text{
   color: #ffc635;
 }
-
+.white-text{
+  color: #fff;
+}
 .program-image-div{
   flex: 1;
 }
@@ -815,12 +817,52 @@ body{
 .contact-us{
   background-color: #28eea7;
 }
+
 .section-title-contact-us{
   background-color: #232323;
   color: #fff;
   padding: 10px;
 }
 
+.section-contact-us{
+  display: flex;
+  flex-direction: row;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+}
+
+.location-text{
+  margin-top: auto;
+}
+
+.fullname{
+  display: flex;
+  flex-direction: row;
+}
+.email-number{
+  display: flex;
+  flex-direction: row;
+}
+
+.radio-container  .wrap{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.radio-container label {
+  display: block;
+  text-align: center;
+  margin: 0 0.2em;
+}
+.radio-container input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
 
 
 /* Responsiveness */
@@ -860,7 +902,10 @@ body{
   .testimonial-subject{
     flex-direction: column;
   }
-  /* .testimonial-slide{
-    flex: 1;
-  } */
+  .fullname{
+    flex-direction: column;
+  }
+  .email-number{
+    flex-direction: column;
+  }
 }
