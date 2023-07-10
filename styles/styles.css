@@ -44,11 +44,26 @@ body{
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
-    background: rgba(251, 80, 142, 0.93);
+    background: #fb508e;
+    animation-name: background-change;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
     flex: 1 0 0;
     align-self: stretch;
     align-content: center;
     position:relative;
+}
+
+/* .header-left-title-detail{
+  content: 'Program title';
+} */
+
+@keyframes background-change {
+  0%   {background-color: #ffc635;}
+  25%  {background-color: #28eea7;}
+  50%  {background-color: #9864da;}
+  75%  {background-color: #fb508e;}
+  100% {background-color: #ffc635;}
 }
 
 .left-bg{
